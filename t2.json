@@ -1,0 +1,143 @@
+{
+  "sha": "f6100a48a13f93cf06764e42b794535a8fd01085",
+  "url": "https://api.github.com/repos/neiltaculod/neil-portfolio/git/trees/f6100a48a13f93cf06764e42b794535a8fd01085",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d7c74093b5e59cb65cb196b3c5856ef5b57e531",
+      "size": 364,
+      "url": "https://api.github.com/repos/neiltaculod/neil-portfolio/git/blobs/5d7c74093b5e59cb65cb196b3c5856ef5b57e531"
+    },
+    {
+      "path": ".prettierignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be49b2655e2222e8a688f616a5c13500298801a0",
+      "size": 92,
+      "url": "https://api.github.com/repos/neiltaculod/neil-portfolio/git/blobs/be49b2655e2222e8a688f616a5c13500298801a0"
+    },
+    {
+      "path": ".prettierrc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90abee2393e79dff7ec36856c94f662a263f0107",
+      "size": 90,
+      "url": "https://api.github.com/repos/neiltaculod/neil-portfolio/git/blobs/90abee2393e79dff7ec36856c94f662a263f0107"
+    },
+    {
+      "path": "AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1aa95e2b2c1d1fb72571b16cc68fafd8148680b",
+      "size": 457,
+      "url": "https://api.github.com/repos/neiltaculod/neil-portfolio/git/blobs/b1aa95e2b2c1d1fb72571b16cc68fafd8148680b"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6204dc09ee257b48e947b1879242cb7e65188000",
+      "size": 294,
+      "url": "https://api.github.com/repos/neiltaculod/neil-portfolio/git/blobs/6204dc09ee257b48e947b1879242cb7e65188000"
+    },
+    {
+      "path": "bun.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "891123260d7d05cc7f0faebb2cae76e3e9cbfbfc",
+      "size": 158577,
+      "url": "https://api.github.com/repos/neiltaculod/neil-portfolio/git/blobs/891123260d7d05cc7f0faebb2cae76e3e9cbfbfc"
+    },
+    {
+      "path": "bunfig.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9fea700dabf8840e70ced096b2558fccb108496",
+      "size": 434,
+      "url": "https://api.github.com/repos/neiltaculod/neil-portfolio/git/blobs/d9fea700dabf8840e70ced096b2558fccb108496"
+    },
+    {
+      "path": "components.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0817a84e832a693e7a79a911efe0b081bd97e06",
+      "size": 443,
+      "url": "https://api.github.com/repos/neiltaculod/neil-portfolio/git/blobs/f0817a84e832a693e7a79a911efe0b081bd97e06"
+    },
+    {
+      "path": "eslint.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be4075bd5e14ae3e6420613f789c3fc8bbeda819",
+      "size": 1250,
+      "url": "https://api.github.com/repos/neiltaculod/neil-portfolio/git/blobs/be4075bd5e14ae3e6420613f789c3fc8bbeda819"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49e51c7987c627ad2791a565a261ff2bcf708ee4",
+      "size": 2973,
+      "url": "https://api.github.com/repos/neiltaculod/neil-portfolio/git/blobs/49e51c7987c627ad2791a565a261ff2bcf708ee4"
+    },
+    {
+      "path": "routeTree.gen.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cabce9564303fc6e4860781a6ad58dd11cb1b6d7",
+      "size": 5134,
+      "url": "https://api.github.com/repos/neiltaculod/neil-portfolio/git/blobs/cabce9564303fc6e4860781a6ad58dd11cb1b6d7"
+    },
+    {
+      "path": "router.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3423d598036579e62f42faec438f868b4bb0bb17",
+      "size": 394,
+      "url": "https://api.github.com/repos/neiltaculod/neil-portfolio/git/blobs/3423d598036579e62f42faec438f868b4bb0bb17"
+    },
+    {
+      "path": "server.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20500c7f347db7dd59ff59e295be226aa317757f",
+      "size": 2048,
+      "url": "https://api.github.com/repos/neiltaculod/neil-portfolio/git/blobs/20500c7f347db7dd59ff59e295be226aa317757f"
+    },
+    {
+      "path": "start.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6935f74eb2d5cff0a21e45b63c9d627d38b474f3",
+      "size": 944,
+      "url": "https://api.github.com/repos/neiltaculod/neil-portfolio/git/blobs/6935f74eb2d5cff0a21e45b63c9d627d38b474f3"
+    },
+    {
+      "path": "styles.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31918caafe3a284410ce8fb35004d711bed484fc",
+      "size": 8945,
+      "url": "https://api.github.com/repos/neiltaculod/neil-portfolio/git/blobs/31918caafe3a284410ce8fb35004d711bed484fc"
+    },
+    {
+      "path": "tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a522d218dc57d4ca2577d8fc1f8ac864b7711ba7",
+      "size": 820,
+      "url": "https://api.github.com/repos/neiltaculod/neil-portfolio/git/blobs/a522d218dc57d4ca2577d8fc1f8ac864b7711ba7"
+    },
+    {
+      "path": "vite.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "650492f2075686f1992f0346d3f4d8601970b4ef",
+      "size": 1339,
+      "url": "https://api.github.com/repos/neiltaculod/neil-portfolio/git/blobs/650492f2075686f1992f0346d3f4d8601970b4ef"
+    }
+  ],
+  "truncated": false
+}
