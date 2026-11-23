@@ -1,0 +1,327 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Design system definition.
+ *
+ * The @theme inline block maps CSS custom properties to Tailwind utility
+ * classes (e.g. --color-primary -> bg-primary, text-primary).
+ *
+ * The :root and .dark blocks define the actual color values using oklch.
+ * All colors MUST use oklch format.
+ *
+ * To add a new semantic color:
+ * 1. Add the variable to :root (light value) and .dark (dark value)
+ * 2. Register it in @theme inline as --color-<name>: var(--<name>)
+ */
+
+@theme inline {
+  --font-heading: "Outfit", sans-serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.85rem;
+  /* Clean, bright light background */
+  --background: oklch(0.99 0.005 240);
+  --foreground: oklch(0.18 0.03 260);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.18 0.03 260);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.18 0.03 260);
+
+  /* Vivid Coral & Sunset Amber primary brand glow */
+  --primary: oklch(0.62 0.22 28);
+  --primary-glow: oklch(0.72 0.22 45);
+  --primary-foreground: oklch(0.99 0.005 240);
+
+  /* Soft slate secondary */
+  --secondary: oklch(0.96 0.01 250);
+  --secondary-foreground: oklch(0.25 0.04 260);
+
+  --muted: oklch(0.96 0.008 250);
+  --muted-foreground: oklch(0.5 0.02 255);
+
+  /* Radiant Gold / Coral Accent */
+  --accent: oklch(0.8 0.16 75);
+  --accent-foreground: oklch(0.22 0.05 40);
+
+  --destructive: oklch(0.58 0.22 25);
+  --destructive-foreground: oklch(0.99 0.005 240);
+
+  --border: oklch(0.9 0.01 255 / 90%);
+  --input: oklch(0.94 0.01 255);
+  --ring: oklch(0.62 0.22 28);
+
+  --chart-1: oklch(0.62 0.22 28);
+  --chart-2: oklch(0.8 0.16 75);
+  --chart-3: oklch(0.6 0.18 230);
+  --chart-4: oklch(0.62 0.18 160);
+  --chart-5: oklch(0.62 0.2 300);
+
+  --sidebar: oklch(0.98 0.006 250);
+  --sidebar-foreground: oklch(0.18 0.03 260);
+  --sidebar-primary: oklch(0.62 0.22 28);
+  --sidebar-primary-foreground: oklch(0.99 0.005 240);
+  --sidebar-accent: oklch(0.96 0.01 250);
+  --sidebar-accent-foreground: oklch(0.25 0.04 260);
+  --sidebar-border: oklch(0.9 0.01 255 / 90%);
+  --sidebar-ring: oklch(0.62 0.22 28);
+}
+
+.dark {
+  --background: oklch(0.12 0.04 250);
+  --foreground: oklch(0.98 0.005 240);
+  --card: oklch(0.16 0.04 250);
+  --card-foreground: oklch(0.98 0.005 240);
+  --popover: oklch(0.16 0.04 250);
+  --popover-foreground: oklch(0.98 0.005 240);
+  --primary: oklch(0.62 0.22 250);
+  --primary-foreground: oklch(0.98 0.005 240);
+  --secondary: oklch(0.22 0.05 250);
+  --secondary-foreground: oklch(0.98 0.005 240);
+  --muted: oklch(0.2 0.03 250);
+  --muted-foreground: oklch(0.7 0.02 250);
+  --accent: oklch(0.78 0.18 210);
+  --accent-foreground: oklch(0.12 0.04 250);
+  --destructive: oklch(0.58 0.22 25);
+  --destructive-foreground: oklch(0.98 0.005 240);
+  --border: oklch(0.28 0.04 250 / 60%);
+  --input: oklch(0.22 0.04 250);
+  --ring: oklch(0.62 0.22 250);
+  --chart-1: oklch(0.62 0.22 250);
+  --chart-2: oklch(0.78 0.18 210);
+  --chart-3: oklch(0.85 0.15 85);
+  --chart-4: oklch(0.65 0.2 160);
+  --chart-5: oklch(0.7 0.18 300);
+  --sidebar: oklch(0.14 0.04 250);
+  --sidebar-foreground: oklch(0.98 0.005 240);
+  --sidebar-primary: oklch(0.62 0.22 250);
+  --sidebar-primary-foreground: oklch(0.98 0.005 240);
+  --sidebar-accent: oklch(0.22 0.05 250);
+  --sidebar-accent-foreground: oklch(0.98 0.005 240);
+  --sidebar-border: oklch(0.28 0.04 250 / 60%);
+  --sidebar-ring: oklch(0.62 0.22 250);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    /* Offset the fixed header (~80px) so anchor jumps land cleanly below it */
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+  }
+
+  /* Ensure every section with an id clears the fixed header on jump */
+  section[id] {
+    scroll-margin-top: 6rem;
+  }
+
+  .legal-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .legal-scrollbar::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.04);
+  }
+  .legal-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 9999px;
+  }
+  .legal-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }
+}
+
+/* 3D Revolving Orbital Animation inspired by saadsaleem.dev */
+@keyframes orbit-cw {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbit-ccw {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes float-gentle {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes pulse-ring {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.03);
+  }
+}
+
+.animate-orbit {
+  animation: orbit-cw 28s linear infinite;
+}
+
+.animate-orbit-reverse {
+  animation: orbit-ccw 28s linear infinite;
+}
+
+.animate-orbit-slow {
+  animation: orbit-cw 38s linear infinite;
+}
+
+.animate-float-portrait {
+  animation: float-gentle 6s ease-in-out infinite;
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 4s ease-in-out infinite;
+}
+
+@keyframes marquee-rtl {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-rtl {
+  animation: marquee-rtl 55s linear infinite;
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.marquee-mask {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #000 8%,
+    #000 92%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
+}
+
+/* Gentle glowing label for the brand strip — soft gray pulse */
+@keyframes brand-glow {
+  0%,
+  100% {
+    color: var(--muted-foreground);
+    text-shadow: 0 0 0 transparent;
+  }
+  50% {
+    color: oklch(0.42 0.01 255);
+    text-shadow:
+      0 0 8px color-mix(in oklab, oklch(0.5 0.01 255) 45%, transparent),
+      0 0 16px color-mix(in oklab, oklch(0.55 0.01 255) 30%, transparent);
+  }
+}
+
+.brand-glow-label {
+  animation: brand-glow 3.5s ease-in-out infinite;
+}
+
+/* Constant white edge-glow + deep ambient shadow for the big Practical Background cards */
+@keyframes experience-edge-glow {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 1px rgba(255, 255, 255, 0.9),
+      0 0 18px 2px rgba(255, 255, 255, 0.6),
+      0 0 38px 6px rgba(255, 255, 255, 0.32),
+      0 22px 50px -18px rgba(15, 23, 42, 0.28),
+      0 12px 28px -14px rgba(15, 23, 42, 0.22);
+  }
+  50% {
+    box-shadow:
+      0 0 0 1.5px rgba(255, 255, 255, 1),
+      0 0 32px 4px rgba(255, 255, 255, 0.82),
+      0 0 62px 12px rgba(255, 255, 255, 0.48),
+      0 34px 72px -16px rgba(15, 23, 42, 0.4),
+      0 18px 38px -14px rgba(15, 23, 42, 0.3);
+  }
+}
+
+.experience-card-glow {
+  animation: experience-edge-glow 3.4s ease-in-out infinite;
+}
+
+/* Fully hidden scrollbars for popup modals — still scrollable, just no visible bar */
+.custom-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
